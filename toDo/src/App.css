@@ -1,26 +1,26 @@
-/* App.css */
 body {
     font-family: Arial, sans-serif;
+    font-size: 50px;
     background-color: #f0f0f0;
-    margin: 10px;
-    padding: 0;
+    margin: auto;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    
     min-height: 100vh;
+    
+    align-items: center;
   }
 
   h1 {
     color: #333;
-    font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 8rem;
   }
   
   /* ToDo.css */
   .toDo {
     display: inline-block; /* Display ToDo items inline */
-    width: 200px; /* Adjust the width as needed */
-    margin: 10px;
+    width: 40vh; /* Adjust the width as needed */
+    margin-bottom: 3rem;
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;
@@ -37,12 +37,7 @@ body {
     text-align: left;
     overflow-wrap: break-word;
   }
-  
-  h3 {
-    color: #333;
-    font-size: 1.5rem;
-  }
-  
+
   p {
     color: #666;
   }
@@ -51,10 +46,11 @@ body {
     background-color: #0078d4;
     color: #fff;
     border: none;
-    padding: 8px 12px;
-    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
     cursor: pointer;
-    margin-right: 10px;
+    font-size: inherit;
   }
   
   .button:hover {
@@ -64,38 +60,35 @@ body {
   /* AddTodo.css */
   /* Style the form and input area */
   #newToDoForm {
+    font-size: inherit;
     display: block;
     align-items: center;
-    width: 20rem;
+    width: 50rem;
   }
-  
-  .form-section {
-    margin: 30px;
-  }
-  
+   
   label {
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 10rem;
   }
   
   textarea {
+    font-size: inherit;
     width: 100%;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    resize: none;
   }
   
   #addButton {
-    background-color: #0078d4;
-    color: #fff;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 30px;
+    background-color: #73c45e; 
   }
   
   #addButton:hover {
-    background-color: #2fb345;
+    background-color: #41e600;
   }
   
+  ul {
+    list-style-type: none;
+    padding:0px;
+  }

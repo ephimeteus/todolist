@@ -20,7 +20,7 @@ function AddToDo ({ createToDo }) {
                     <label htmlFor="new-toDo">To do:</label>
                     <textarea id="new-toDo" rows="4" cols="20" required value= { text } onChange={ handleChange }></textarea>
                 </div>
-                <button onClick={ handleSubmit } className="button" id='addButton'>Add</button>
+                <button onClick={ handleSubmit } className="button" id='addButton'> + </button>
             </form>
         </>
     );
