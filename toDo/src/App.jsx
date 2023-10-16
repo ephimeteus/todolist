@@ -18,7 +18,7 @@ function App() {
   
   return (
     <>
-      <h1>Hyper Task Lister 3000</h1>
+      <h1>Ｔｏ－Ｄｏ░　一覧 ）</h1>
       <AddToDo createToDo= { createToDo }/>
       <ToDoList toDos= { toDos } deleteToDo= { deleteToDo } />
     </>

@@ -17,10 +17,10 @@ function AddToDo ({ createToDo }) {
         <>
             <form id="newToDoForm">
                 <div className="form-section">
-                    <label htmlFor="new-toDo">To do:</label>
+                    <label htmlFor="new-toDo"></label>
                     <textarea id="new-toDo" rows="4" cols="20" required value= { text } onChange={ handleChange }></textarea>
                 </div>
-                <button onClick={ handleSubmit } className="button" id='addButton'> + </button>
+                <button onClick={ handleSubmit } className="button" id='addButton'></button>
             </form>
         </>
     );

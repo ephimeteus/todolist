@@ -6,7 +6,7 @@ function ToDoList({ toDos, deleteToDo }) {
         {toDos.map((text, index) => (
           <li key={index}>
             <ToDo description={text}/>
-            <button className= "button" onClick={() => deleteToDo(index)}> x </button>
+            <button className= "button" onClick={() => deleteToDo(index)}></button>
           </li>
         ))}
       </ul>
