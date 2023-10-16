@@ -1,0 +1,100 @@
+/* App.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    
+    min-height: 100vh;
+  }
+   
+  h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* ToDo.css */
+  .toDo {
+    display: inline-block; /* Display ToDo items inline */
+    width: 200px; /* Adjust the width as needed */
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .toDo-upper-section {
+    /* Styles for the upper section if needed */
+  }
+  
+  .toDo-lower-section {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  h3 {
+    color: #333;
+    font-size: 1.5rem;
+  }
+  
+  p {
+    color: #666;
+  }
+  
+  .button {
+    background-color: #0078d4;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .button:hover {
+    background-color: #ec4646;
+  }
+  
+  /* AddTodo.css */
+  /* Style the form and input area */
+  #newToDoForm {
+    display: block;
+    align-items: center;
+    width: 20rem;
+  }
+  
+  .form-section {
+    margin: 30px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #addButton {
+    background-color: #0078d4;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 30px;
+  }
+  
+  #addButton:hover {
+    background-color: #2fb345;
+  }
+  
