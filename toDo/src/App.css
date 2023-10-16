@@ -2,7 +2,7 @@
 
 /* Base colors */
 :root {
-  --dracula-background: #282a36;
+  --dracula-background: rgb(40, 42, 54);
   --dracula-current-line: #44475a;
   --dracula-foreground: #cdd2d3;
   --dracula-comment: #6272a4;
@@ -31,6 +31,9 @@ h1 {
     font-family:cursive;
     color: var(--dracula-foreground);
     margin-bottom: 8rem;
+}
+img {
+  float: left;
 }
 
 /* ToDo.css */

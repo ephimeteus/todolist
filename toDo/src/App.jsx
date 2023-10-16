@@ -2,6 +2,7 @@ import './App.css'
 import ToDoList from '../components/ToDoList'
 import AddToDo from "../components/AddToDo.jsx"
 import { useState } from 'react';
+import logo from './assets/logo.jpg';
 
 
 
@@ -18,7 +19,8 @@ function App() {
   
   return (
     <>
-      <h1>Ｔｏ－Ｄｏ░　一覧 ）</h1>
+      <img src={ logo } alt='Logo'></img>
+      <h1>Ｔｏ－Ｄｏ░　一覧 </h1>
       <AddToDo createToDo= { createToDo }/>
       <ToDoList toDos= { toDos } deleteToDo= { deleteToDo } />
     </>
