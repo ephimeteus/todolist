@@ -2,12 +2,15 @@ import ToDo from "./ToDo";
 
 function ToDoList({ toDos, deleteToDo }) {
     return (
-        <div>
-            {toDos.map(
-                (text, index) => ( <ToDo key={index} description={text} deleteToDo={deleteToDo}/> )
-            )}
-      </div>
+      <ul>
+        {toDos.map((text, index) => (
+          <li key={index}>
+            <ToDo description={text}/>
+            <button className= "button" onClick={() => deleteToDo(index)}>Delete</button>
+          </li>
+        ))}
+      </ul>
     );
-};
+  }
 
 export default ToDoList;
