@@ -6,15 +6,19 @@ import logo from './assets/logo.jpg';
 
 
 
+
 function App() {
   const [toDos, setToDos] = useState([]);
   
-  const createToDo = text => setToDos( [...toDos,text] )
- 
-  const deleteToDo = (index) => {
-    const updatedToDos = [...toDos];
-    updatedToDos.splice(index, 1);
-    setToDos(updatedToDos);
+  const createToDo = text => {
+    let newToDo = { id: crypto.randomUUID(), text: text };
+    setToDos( [...toDos,newToDo] );
+  };
+  
+  const deleteToDo = (delId) => {
+    const updateToDos = [...toDos];
+    let filteredToDoes = updateToDos.filter(toDo => toDo.id !== delId);
+    setToDos(filteredToDoes);
   };
   
   return (
