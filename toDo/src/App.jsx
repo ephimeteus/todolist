@@ -5,8 +5,6 @@ import { useState } from 'react';
 import logo from './assets/logo.jpg';
 
 
-
-
 function App() {
   const [toDos, setToDos] = useState([]);
   
