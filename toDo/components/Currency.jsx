@@ -24,19 +24,23 @@ const Currency = () => {
         <ul>
             <li key={'USD'} className='currency-rates'> 
                 <strong>USD</strong>
-                <p>{`${data.rates.USD.buy}`} | {`${data.rates.USD.sell}`}</p>
+                <p>{`${data.rates.USD.buy}`}</p>
+                <p>{`${data.rates.USD.sell}`}</p>
             </li>
             <li key={'ARS'} className='currency-rates'> 
                 <strong>ARS</strong>
-                <p>{`${data.rates.ARS.buy}`} | {`${data.rates.ARS.sell}`}</p>
+                <p>{`${data.rates.ARS.buy}`}</p>
+                <p>{`${data.rates.ARS.sell}`}</p>
             </li>
             <li key={'BRL'} className='currency-rates'> 
                 <strong>BRL</strong>
-                <p>{`${data.rates.BRL.buy}`} | {`${data.rates.BRL.sell}`}</p>
+                <p>{`${data.rates.BRL.buy}`}</p>
+                <p>{`${data.rates.BRL.sell}`}</p>
             </li>
             <li key={'EUR'} className='currency-rates'> 
                 <strong>EUR</strong>
-                <p>{`${data.rates.EUR.buy.toFixed(1)}`} | {`${data.rates.EUR.sell.toFixed(1)}`}</p>
+                <p>{`${data.rates.EUR.buy}`}</p>
+                <p>{`${data.rates.EUR.sell}`}</p>
             </li>
            
             

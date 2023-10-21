@@ -215,20 +215,22 @@ ul {
   background-color:var(--dracula-background);
   color: var(--dracula-comment);
   display: block;
-  width: 25rem;
+  width: fit-content;
   height: fit-content;
   margin:3rem;
   border: 1px solid var(--dracula-current-line);
   border-radius: 20px;
-  padding: 10px;
+  padding: 3rem;
   box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.349);
 }
 
 .currency strong {
   color: var(--dracula-green);
+  padding-top: 1.5rem;
 }
 
 .currency-rates {
-  display: flex;
-  gap: 40%;  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;  
+  column-gap: 2rem;
 }
