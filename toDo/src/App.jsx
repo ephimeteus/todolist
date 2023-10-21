@@ -2,7 +2,9 @@ import './App.css'
 import ToDoList from '../components/ToDoList'
 import AddToDo from "../components/AddToDo.jsx"
 import { useState } from 'react';
-import logo from './assets/logo.jpg';
+import WeatherWidget from '../components/Weather';
+import NewsFeed from '../components/News';
+
 
 
 function App() {
@@ -20,12 +22,14 @@ function App() {
   };
   
   return (
-    <>
-      <img src={ logo } alt='Logo'></img>
-      <h1>Ｔｏ－Ｄｏ░　一覧 </h1>
-      <AddToDo createToDo= { createToDo }/>
-      <ToDoList toDos= { toDos } deleteToDo= { deleteToDo } />
-    </>
+    <div className='container'>
+      <div className='todo'>
+        <AddToDo createToDo= { createToDo }/>
+        <ToDoList toDos= { toDos } deleteToDo= { deleteToDo } />
+      </div>
+      <WeatherWidget />
+      <NewsFeed />
+    </div>
   );
 };
 

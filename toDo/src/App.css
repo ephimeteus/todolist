@@ -2,44 +2,47 @@
 
 /* Base colors */
 :root {
-  --dracula-background: rgb(40, 42, 54);
+  --dracula-background: rgb(31, 32, 34);
   --dracula-current-line: #44475a;
   --dracula-foreground: #cdd2d3;
   --dracula-comment: #6272a4;
-  --dracula-cyan: #0cf1de;
-  --dracula-green: #4b6931;
+  --dracula-cyan: #77c4c9;
+  --dracula-green: #73ab29;
   --dracula-orange: #ffb86c;
   --dracula-pink: #ff64bc;
   --dracula-purple: #bd93f9;
   --dracula-red: #ff5555;
   --dracula-yellow: #f1fa8c;
+  
+}
+
+.container{
+    display: flex;
+    scrollbar-gutter: auto;
 }
 
 body {
     font-family: Arial, sans-serif;
     font-size: 25px;
-    background: rgb(40,42,54);
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    margin-left:35% ;
-    
-    
+    background:var(--dracula-background);
+    padding: 10px;  
 }
 
 h1 {
-    font-family:cursive;
+    font-family:inherit;
     color: var(--dracula-foreground);
     margin-bottom: 8rem;
+    font-size: 2rem;
 }
 img {
   float: left;
 }
 
 /* ToDo.css */
-.toDo {
-    display: inline-block; /* Display ToDo items inline */
-    width: 50rem; /* Adjust the width as needed */
+.todo {
+    display: inline-block;
+    height: fit-content; /* Display ToDo items inline */
+    width: 23rem; /* Adjust the width as needed */
     margin-bottom: 3rem;
     margin-right: 3rem;
     border: 1px solid var(--dracula-current-line);
@@ -50,11 +53,9 @@ img {
 }
 
 .toDo-upper-section {
-    /* Styles for the upper section if needed */
-    background-image: linear-gradient(to bottom right, var(--dracula-green), var(--dracula-cyan));
     height: 20px;
-    border-radius: 20px;
-    margin: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
 }
 
 
@@ -70,40 +71,35 @@ p {
     margin: 10px;
 }
 
-.button {
+.delete-button {
     background-color: transparent;
     color: var(--dracula-foreground);
     border: 1px solid;
-    border-color: var(--dracula-purple);;
+    border-color: var(--dracula-red);;
     padding: 0.5rem;
-    margin: 1rem;
-    border-radius: 40%;
+    position: relative;
+    top: 0;
+    border-radius: 50%;
     cursor: pointer;
     font-size: inherit;
 }
 
-.button:hover {
-    background-color: var(--dracula-pink);
+.delete-button:hover {
+    background-color: var(--dracula-red);
 }
 
 /* AddTodo.css */
 /* Style the form and input area */
 #newToDoForm {
     font-size: inherit;
-    display: block;
     align-items: center;
-    width: 50rem;
-}
-
-label {
-    font-weight: bold;
-    margin-bottom: 10rem;
-    color: var(--dracula-purple);
+    width: 20rem;
+    margin-right: 50px;
 }
 
 textarea {
-  background-color: var(--dracula-comment);
-    color: var(--dracula-background);
+    background-color: transparent;
+    color: var(--dracula-purple);
     font-size: inherit;
     width: 100%;
     padding: 10px;
@@ -114,13 +110,19 @@ textarea {
 }
 
 #addButton {
-   border-color : var(--dracula-green);
-   color:var(--dracula-green);
    padding-right:.6rem;
+   background-color: transparent;
+   color: var(--dracula-green);
+   border: 1px solid;
+   border-color: var(--dracula-green);
+   border-radius: 50%;
+   padding: 0.5rem;
+   cursor: pointer;
+   font-size: inherit;
 }
 
 #addButton:hover {
-   background-color : var(--dracula-cyan);
+   background-color : var(--dracula-green);
    color:  var(--dracula-foreground);
 }
 
@@ -128,3 +130,95 @@ ul {
    list-style-type:none;
    padding :0px; 
 }
+
+
+
+/* weather
+
+/* WeatherWidget.css */
+/* Estilos para el widget de clima basados en el estilo de la aplicación de tareas */
+.weather-widget {
+    display: inline-block;
+    width: 21rem;
+    height: fit-content;
+    margin-bottom: 3rem;
+    margin-right: 3rem;
+    border: 1px solid var(--dracula-current-line);
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.349);
+  }
+  
+  .weather-upper-section {
+    height: 10rem;
+    border-radius: 20px;
+    margin: 10px;
+  }
+  
+  .weather-lower-section {
+    padding: 10px;
+    border-top: 1px solid var(--dracula-current-line);
+  }
+  
+  h1 {
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: var(--dracula-foreground);
+      margin-bottom: .5rem;
+  }
+  
+  img {
+      width:100px;
+      height:auto;
+  }
+  
+  p {
+      color: var(--dracula-comment);
+      margin: .5rem;
+  }
+
+  
+
+.news-feed {
+  position: absolute;
+  right: 0%;
+  display: block;
+  width: 25rem;
+  height: 55rem;
+  margin-bottom: 3rem;
+  margin-right: 3rem;
+  overflow-y: scroll;
+  scrollbar-gutter: auto;
+  border: 1px solid var(--dracula-current-line);
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.349);
+}
+
+.news-feed ul {
+  list-style: none;
+  padding: 0;
+}
+
+.news-feed li {
+  border-bottom: 1px solid var(--dracula-current-line);
+  padding: 10px;
+}
+
+.news-feed a {
+  display: block;
+  font-weight:normal;
+  color:var(--dracula-cyan);
+  text-decoration: none;
+}
+
+.news-feed p {
+  margin-top: 5px;
+  color:var(--dracula-comment);
+}
+
+::-webkit-scrollbar{
+  background-color:transparent;
+}
+
+  
+  
