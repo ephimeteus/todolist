@@ -31,8 +31,8 @@ function WeatherWidget() {
       <div className="weather-widget">
         <div className="weather-upper-section">
           <h1>{weather.name}</h1>
-          <img src={`http://openweathermap.org/img/w/${weather.weather[0].icon}.png`} alt={weather.weather[0].description} />
           <p>{weather.weather[0].description}</p>
+          <img src={`http://openweathermap.org/img/w/${weather.weather[0].icon}.png`} alt={weather.weather[0].description} />
         </div>
         <div className="weather-lower-section">
           <p>Temperature: {weather.main.temp} °C</p>

@@ -7,44 +7,34 @@
   --dracula-foreground: #cdd2d3;
   --dracula-comment: #6272a4;
   --dracula-cyan: #77c4c9;
-  --dracula-green: #73ab29;
+  --dracula-green: #86a958;
   --dracula-orange: #ffb86c;
   --dracula-pink: #ff64bc;
   --dracula-purple: #bd93f9;
   --dracula-red: #ff5555;
   --dracula-yellow: #f1fa8c;
-  
 }
 
 .container{
     display: flex;
     scrollbar-gutter: auto;
+    height: fit-content;
 }
 
 body {
     font-family: Arial, sans-serif;
     font-size: 25px;
-    background:var(--dracula-background);
-    padding: 10px;  
-}
-
-h1 {
-    font-family:inherit;
-    color: var(--dracula-foreground);
-    margin-bottom: 8rem;
-    font-size: 2rem;
-}
-img {
-  float: left;
+    padding: 10px;   
+    background-color: var(--dracula-background);
 }
 
 /* ToDo.css */
 .todo {
+  background-color:var(--dracula-background);
     display: inline-block;
     height: fit-content; /* Display ToDo items inline */
     width: 23rem; /* Adjust the width as needed */
-    margin-bottom: 3rem;
-    margin-right: 3rem;
+    margin:3rem;
     border: 1px solid var(--dracula-current-line);
     border-radius: 20px;
     padding: 10px;
@@ -64,12 +54,9 @@ img {
     border-top: 1px solid var(--dracula-current-line);
     text-align: left;
     overflow-wrap: break-word;
+    color: var(--dracula-purple);
 }
 
-p {
-    color: var(--dracula-comment);
-    margin: 10px;
-}
 
 .delete-button {
     background-color: transparent;
@@ -138,21 +125,23 @@ ul {
 /* WeatherWidget.css */
 /* Estilos para el widget de clima basados en el estilo de la aplicación de tareas */
 .weather-widget {
+    background-color:var(--dracula-background);
     display: inline-block;
     width: 21rem;
     height: fit-content;
-    margin-bottom: 3rem;
-    margin-right: 3rem;
+    margin:3rem;
     border: 1px solid var(--dracula-current-line);
     border-radius: 20px;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.349);
+    color: var(--dracula-comment);
   }
   
   .weather-upper-section {
-    height: 10rem;
+    height: 15rem;
     border-radius: 20px;
-    margin: 10px;
+    color: var(--dracula-foreground);
+    padding: 10px;
   }
   
   .weather-lower-section {
@@ -162,8 +151,9 @@ ul {
   
   h1 {
       font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      color: var(--dracula-foreground);
+      color: var(--dracula-green);
       margin-bottom: .5rem;
+      font-size: 2rem;
   }
   
   img {
@@ -171,21 +161,20 @@ ul {
       height:auto;
   }
   
-  p {
-      color: var(--dracula-comment);
+  .weather-widget p {
       margin: .5rem;
   }
 
   
 
 .news-feed {
+  background-color:var(--dracula-background);
   position: absolute;
   right: 0%;
   display: block;
   width: 25rem;
   height: 55rem;
-  margin-bottom: 3rem;
-  margin-right: 3rem;
+  margin:3rem;
   overflow-y: scroll;
   scrollbar-gutter: auto;
   border: 1px solid var(--dracula-current-line);
@@ -207,7 +196,7 @@ ul {
 .news-feed a {
   display: block;
   font-weight:normal;
-  color:var(--dracula-cyan);
+  color:var(--dracula-green);
   text-decoration: none;
 }
 
@@ -220,5 +209,26 @@ ul {
   background-color:transparent;
 }
 
-  
-  
+/*Currency*/
+
+.currency {
+  background-color:var(--dracula-background);
+  color: var(--dracula-comment);
+  display: block;
+  width: 25rem;
+  height: fit-content;
+  margin:3rem;
+  border: 1px solid var(--dracula-current-line);
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.349);
+}
+
+.currency strong {
+  color: var(--dracula-green);
+}
+
+.currency-rates {
+  display: flex;
+  gap: 40%;  
+}

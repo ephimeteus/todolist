@@ -4,6 +4,7 @@ import AddToDo from "../components/AddToDo.jsx"
 import { useState } from 'react';
 import WeatherWidget from '../components/Weather';
 import NewsFeed from '../components/News';
+import Currency from '../components/Currency';
 
 
 
@@ -28,6 +29,7 @@ function App() {
         <ToDoList toDos= { toDos } deleteToDo= { deleteToDo } />
       </div>
       <WeatherWidget />
+      <Currency />
       <NewsFeed />
     </div>
   );
