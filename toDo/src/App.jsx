@@ -5,6 +5,7 @@ import { useState } from 'react';
 import WeatherWidget from '../components/Weather';
 import NewsFeed from '../components/News';
 import Currency from '../components/Currency';
+import Calendar from 'react-calendar';
 
 
 
@@ -30,7 +31,11 @@ function App() {
       </div>
       <WeatherWidget />
       <Currency />
-      <NewsFeed />
+      <div className='calendar'>
+        <Calendar />
+        <NewsFeed />
+      </div>
+      
     </div>
   );
 };
