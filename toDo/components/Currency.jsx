@@ -48,7 +48,7 @@ const Currency = () => {
       </div>
     );
   } else {
-    return <p>Loading Currencies...</p>;
+    return <p id='loading-currencies'>Loading Currencies...</p>;
   }
 };
 
